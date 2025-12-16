@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: bank-lib
+api:
+  core:
+    url: http://localhost:8080

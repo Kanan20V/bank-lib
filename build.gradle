@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'com.github.Kanan20V'
-version = '1.0.5'
+version = '1.0.6'
 description = 'bank-lib'
 
 java {
