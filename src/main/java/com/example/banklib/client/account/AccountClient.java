@@ -19,6 +19,6 @@ public interface AccountClient {
   List<AccountResponse> getAccounts(@RequestHeader("x-user-cms-id") Long cmsId);
 
   @GetMapping("/accounts/accountNumber/{accountNumber}")
-  List<AccountResponse> getAccount(@RequestHeader("x-user-cms-id") Long cmsId,
+  AccountResponse getAccount(@RequestHeader("x-user-cms-id") Long cmsId,
                                    @PathVariable String accountNumber);
 }

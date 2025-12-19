@@ -15,11 +15,11 @@ public interface CardClient {
   CardResponse getCard(@PathVariable("uuid") UUID uuid,
                        @RequestHeader("x-user-cms-id") Long customerId);
 
-  @GetMapping("/pan/{pan}")
+  @GetMapping("/cards/pan/{pan}")
   CardResponse getCard(@PathVariable("uuid") String pan,
                        @RequestHeader("x-user-cms-id") Long customerId);
 
-  @PatchMapping("/status")
+  @PatchMapping("/cards/status")
   CardResponse updateCardStatus(
       @RequestHeader("x-user-customer-id") Long customerId,
       @RequestParam String pan,
