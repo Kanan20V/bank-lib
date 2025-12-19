@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface CardClient {
 
   @GetMapping("/cards/uuid/{uuid}")
-  CardResponse getCard(@PathVariable("uuid") UUID uuid,
+  CardResponse getCard(@PathVariable UUID uuid,
                        @RequestHeader("x-user-cms-id") Long customerId);
 
   @GetMapping("/cards/pan/{pan}")
-  CardResponse getCard(@PathVariable("uuid") String pan,
+  CardResponse getCard(@PathVariable String pan,
                        @RequestHeader("x-user-cms-id") Long customerId);
 
   @PatchMapping("/cards/status")

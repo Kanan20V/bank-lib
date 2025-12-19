@@ -16,7 +16,7 @@ public class TransactionResponseDto {
 
   BigDecimal amount;
 
-  boolean isGoingOut;
+  boolean goingOut;
 
   TransactionType type;
 
