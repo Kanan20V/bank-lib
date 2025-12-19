@@ -10,6 +10,6 @@ public interface PaymentClient {
   @PostMapping("/actions/payment")
   void payment(@RequestBody PaymentRequestDto request);
 
-  @PostMapping("/transfer")
+  @PostMapping("actions/transfer")
   String transfer(@RequestBody TransferRequestDto request);
 }
